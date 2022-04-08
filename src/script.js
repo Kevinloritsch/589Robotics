@@ -42,6 +42,14 @@ let donater = document.getElementById("DonateStatement")
 let donater2 = document.getElementById("DonateStatement2")
 let donateBuffer = document.getElementById("DonateBuffer")
 let section = document.getElementById("finalSection")
+let buttonSVG1 = document.getElementById("button_svg1")
+let buttonSVG2 = document.getElementById("button_svg2")
+let button1 = document.getElementById("button1")
+let button2 = document.getElementById("button2")
+let buttonGrid = document.getElementById("HousesButtons")
+
+
+
 if(sizes.width < 700)
 {
     lengthdiv = 2.2;
@@ -52,6 +60,16 @@ if(sizes.width < 700)
     donater2.setAttribute('class', "DonateStatementSmall")
     donateBuffer.setAttribute('class', "DonateBuffer")
     section.setAttribute('class', "section")
+    buttonSVG1.setAttribute('class', "button__svg_small")
+    buttonSVG2.setAttribute('class', "button__svg_small")
+    button1.setAttribute('class', "button_small")
+    button2.setAttribute('class', "button_small")
+}
+
+else
+{
+    buttonGrid.setAttribute('class', "DonateStatementLarge")
+
 }
 
 /**
